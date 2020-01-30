@@ -1,0 +1,25 @@
+#skills .progress {
+  display: flex;
+  width: 600px;
+  height: 25px;
+  background: #DDD;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
+#skills .progress .step {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  font-weight: bold;
+}
+
+#skills .progress .step:not(:last-child) {
+  border-right: 1px solid black;
+}
+
+#skills .progress .step.complete {
+  background: #FF4D00;
+  color: white;
+}
